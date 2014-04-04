@@ -1,0 +1,24 @@
+# Describe
+snippet dnew
+	describe('${1:description}', function () {
+		beforeEach(module('${2:module_name}'));
+
+		${0}
+	});
+
+snippet inject
+	inject(function (_${1:dependency}_) {
+		${0}
+	});
+
+snippet controller
+	angular.module('${1:module_name}')
+		.controller('${2:controller_name}', function ($scope) {
+			${0}
+		});
+
+snippet service
+	angular.module('${1:module_name}')
+		.service('${2:controller_name}', function ($scope) {
+			${0}
+		});
