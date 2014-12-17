@@ -2,6 +2,10 @@
 # Ruby snippets - for Rails, see below #
 ########################################
 
+snippet c
+	context '${1}' do
+		${0}
+	end
 snippet def
 	def ${0}
 	end
@@ -19,6 +23,8 @@ snippet letd
 	let(:${1}) do
 		${0}
 	end
+snippet ibl
+	it_behaves_like '${0}'
 snippet it
 	it '${1}' do
 		${0}
@@ -31,3 +37,7 @@ snippet erw
 	expect(${1}).to receive(:${2}).with(${3})
 snippet s
 	subject { ${0} }
+snippet se
+	shared_examples_for '${1}' do
+		${0}
+	end
