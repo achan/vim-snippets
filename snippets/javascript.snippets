@@ -1,0 +1,29 @@
+snippet imp
+	import ${1} from "${0}"
+
+snippet ed
+	export default ${0}
+
+snippet snew
+	import React from "react"
+	import { action } from "@storybook/addon-actions"
+	import { storiesOf } from "@storybook/react"
+
+	storiesOf("${1}", module)
+		.add("${2}", () => {
+			${0}
+		})
+
+snippet stories
+	storiesOf("${1}", module)
+		.add("${2}", () => {
+			${0}
+		})
+
+snippet ()
+	(${1}) => ${0}
+
+snippet {
+	{
+		${0}
+	}
